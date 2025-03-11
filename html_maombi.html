@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu ya Maombi ya Mkopo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        .menu {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .menu ul li {
+            flex: 1 1 calc(50% - 20px); /* Kugawa nafasi vizuri */
+            margin: 10px;
+            border-radius: 8px;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+            text-align: center;
+        }
+        .menu ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+        }
+
+        /* Rangi tofauti kwa kila section */
+        .mwongozo { background: #ff6b6b; }
+        .vipaumbele { background: #feca57; }
+        .nyaraka { background: #1dd1a1; }
+        .jinsi { background: #54a0ff; }
+        .majibu { background: #5f27cd; }
+        .saini { background: #ff9f43; }
+        .kata-rufaa { background: #ee5253; }
+        .whatsapp { background: #25D366; }
+
+        /* Hover effect */
+        .menu ul li:hover {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+            transform: scale(1.05);
+        }
+
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            .menu ul li {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <ul>
+            <li class="mwongozo"><a href="go:MW1">📘 Mwaongozo wa Mkopo</a></li>
+            <li class="vipaumbele"><a href="go:VP1">🎯 Vipaumbele vya Mkopo</a></li>
+            <li class="nyaraka"><a href="go:NY1">📄 Nyaraka na Taarifa Muhimu</a></li>
+            <li class="jinsi"><a href="go:J1">📝 Jinsi ya Kuomba Mkopo</a></li>
+            <li class="majibu"><a href="#">📩 Majibu ya Mkopo Wako</a></li>
+            <li class="saini"><a href="#">✅ Saini Mkopo Wako</a></li>
+            <li class="kata-rufaa"><a href="#">⚖️ Kata Rufaa ya Mkopo</a></li>
+            <li class="whatsapp"><a href="go:WhatsApp">💬 Jiunge na WhatsApp Group</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
